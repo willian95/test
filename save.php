@@ -2,6 +2,9 @@
   $page_title = 'Agregar usuarios';
   require_once('includes/load.php');
 
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 header('Content-Type: aplication/json');
 $array = json_decode(file_get_contents("php://input"),true);
 
